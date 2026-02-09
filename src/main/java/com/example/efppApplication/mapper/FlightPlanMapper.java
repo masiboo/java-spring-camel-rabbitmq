@@ -1,7 +1,7 @@
 package com.example.efppApplication.mapper;
 
 
-import com.example.efppApplication.dto.FlightPlanDTO;
+import com.example.efppApplication.model.FlightPlan;
 import com.example.efppApplication.model.FlightPlanEntity;
 import com.example.efppApplication.model.FlightStatus;
 import org.springframework.stereotype.Component;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class FlightPlanMapper {
 
-    public FlightPlanEntity toEntity(FlightPlanDTO dto) {
+    public FlightPlanEntity toEntity(FlightPlan dto) {
         FlightPlanEntity entity = new FlightPlanEntity();
 
         entity.setFlightId(dto.getFlightId());

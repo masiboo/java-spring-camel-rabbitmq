@@ -22,4 +22,3 @@ public class FlightController {
         return ResponseEntity.accepted().body("Flight received");
     }
 }
-
